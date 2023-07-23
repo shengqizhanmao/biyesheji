@@ -1,0 +1,7 @@
+
+.uni-search-bar{
+		background-color: #ffffff;
+}
+.list{
+	margin-top: 20rpx;
+}

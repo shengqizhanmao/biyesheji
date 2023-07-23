@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "模块区",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-nav-bar": "../../../uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar",
+    "uni-notice-bar": "../../../uni_modules/uni-notice-bar/components/uni-notice-bar/uni-notice-bar",
+    "uni-collapse-item": "../../../uni_modules/uni-collapse/components/uni-collapse-item/uni-collapse-item",
+    "uni-collapse": "../../../uni_modules/uni-collapse/components/uni-collapse/uni-collapse",
+    "uni-popup-dialog": "../../../uni_modules/uni-popup/components/uni-popup-dialog/uni-popup-dialog",
+    "uni-popup": "../../../uni_modules/uni-popup/components/uni-popup/uni-popup",
+    "uni-data-select": "../../../uni_modules/uni-data-select/components/uni-data-select/uni-data-select",
+    "card-article-index": "../../../components/card-article-index/card-article-index",
+    "uni-load-more": "../../../uni_modules/uni-load-more/components/uni-load-more/uni-load-more"
+  }
+}

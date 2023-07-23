@@ -1,0 +1,30 @@
+
+.scrollbar-flex-content {
+		display: flex;
+}
+.scrollbar-demo-item {
+		flex-shrink: 0;
+		display: flex;
+		width: 170rpx;
+		height: 40px;
+		margin: 10px;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		border-radius: 10px;
+}
+.scrollbar-demo-item2 {
+		flex-shrink: 0;
+		display: flex;
+		width: 170rpx;
+		height: 45px;
+		margin: 10px;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		border-radius: 10px;
+}
+.scrollbar-text {
+		font-size: 20rpx
+}
+

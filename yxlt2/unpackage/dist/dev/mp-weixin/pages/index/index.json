@@ -1,0 +1,16 @@
+{
+  "navigationBarTitleText": "首页",
+  "onReachBottomDistance": 50,
+  "usingComponents": {
+    "uni-grid-item": "../../uni_modules/uni-grid/components/uni-grid-item/uni-grid-item",
+    "uni-grid": "../../uni_modules/uni-grid/components/uni-grid/uni-grid",
+    "uni-card": "../../uni_modules/uni-card/components/uni-card/uni-card",
+    "uni-notice-bar": "../../uni_modules/uni-notice-bar/components/uni-notice-bar/uni-notice-bar",
+    "uni-collapse-item": "../../uni_modules/uni-collapse/components/uni-collapse-item/uni-collapse-item",
+    "uni-collapse": "../../uni_modules/uni-collapse/components/uni-collapse/uni-collapse",
+    "uni-popup-dialog": "../../uni_modules/uni-popup/components/uni-popup-dialog/uni-popup-dialog",
+    "uni-popup": "../../uni_modules/uni-popup/components/uni-popup/uni-popup",
+    "card-article-index": "../../components/card-article-index/card-article-index",
+    "uni-load-more": "../../uni_modules/uni-load-more/components/uni-load-more/uni-load-more"
+  }
+}

@@ -1,0 +1,113 @@
+
+.fengexian2 {
+		clear: both;
+		width: 650rpx;
+		height: 2rpx;
+		border-top: 2rpx solid #cacaca;
+		float: left;
+		margin-bottom: 100rpx;
+}
+.image {
+		width: 70rpx;
+		height: 70rpx;
+		border-radius: 45rpx;
+}
+.image2{
+		width: 50rpx;
+		height: 50rpx;
+		border-radius: 45rpx;
+}
+.avatar {
+		float: left;
+}
+.nicknameLeft {
+		float: left;
+		margin-left: 20rpx;
+}
+.nickname {
+		float: left;
+}
+.delete {
+		color: #00aaaa;
+		margin-left: 10rpx;
+		margin-top: 10rpx;
+		float: right;
+}
+.delete-button {
+		float: right;
+		font-size: 12rpx;
+}
+.layer {
+		clear: both;
+		/* float: left; */
+		font-size: 19rpx;
+}
+.content {
+		clear: both;
+		margin-left: 95rpx;
+		margin-top: 20rpx;
+		margin-bottom: 20rpx;
+}
+
+	/* 子评论 */
+.child {
+		clear: both;
+		background-color: #e2e2e2;
+		min-width: 450rpx;
+		min-height: 70rpx;
+		margin-left: 100rpx;
+		float: left;
+		border-radius: 10rpx;
+		margin-bottom: 20rpx;
+}
+.child-image{
+		clear: both;
+		color: #00aaaa;
+		margin-left: 10rpx;
+		margin-top: 10rpx;
+		float: left;
+}
+.child-nickname {
+		color: #00aaaa;
+		margin-left: 10rpx;
+		margin-top: 10rpx;
+		float: left;
+}
+.child-delete {
+		color: #00aaaa;
+		margin-left: 10rpx;
+		margin-top: 10rpx;
+		float: right;
+}
+.child-delete-button {
+		float: right;
+		font-size: 12rpx;
+}
+.child-content {
+		float: left;
+		clear: both;
+		margin-left: 40rpx;
+		/* margin-top: 10rpx; */
+}
+.child-pl {
+		margin-top: 10rpx;
+		float: right;
+}
+.child-pl-button {
+		float: right;
+		font-size: 12rpx;
+}
+
+	/* 评论按钮 */
+.pl {
+		clear: both;
+		margin-top: 20rpx;
+}
+.pl-button {
+		float: right;
+		font-size: 12rpx;
+}
+.pl-createDate {
+		float: left;
+		font-size: 12rpx;
+}

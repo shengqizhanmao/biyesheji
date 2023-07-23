@@ -1,0 +1,55 @@
+
+view {
+		display: flex;
+		box-sizing: border-box;
+		flex-direction: column;
+}
+page {
+		background-color: #f8f8f8;
+}
+.center {
+		flex: 1;
+		flex-direction: column;
+		background-color: #f8f8f8;
+}
+.user {
+		width: 750rpx;
+		padding: 20rpx;
+		padding-top: 50rpx;
+		background-image: url(../../static/uni-center/headers.png);
+		flex-direction: column;
+		align-items: center;
+}
+.logo-img-avatar{
+		width: 130rpx;
+		height: 130rpx;
+		position: relative;
+		top: 20rpx;
+		right: 250rpx;
+}
+.logo-title {
+		flex: 1;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: row;
+}
+.user-name-nick{
+		position: relative;
+		height: 50rpx;
+		font-size: 30rpx;
+		color: #000000;
+		top: -140rpx;
+		right: 50rpx;
+}
+.user-name-user {
+		position: relative;
+		height: 100rpx;
+		font-size: 25rpx;
+		color: #434343;
+		top: -50rpx;
+		right: 100rpx;
+}
+.add{
+			display: flex;
+			flex-direction: column;
+}

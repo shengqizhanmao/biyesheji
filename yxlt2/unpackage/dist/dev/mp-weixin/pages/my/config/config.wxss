@@ -1,0 +1,26 @@
+
+.Logout{
+		display: flex;
+		flex-direction: column;
+}
+.center-list {
+		margin-bottom: 30rpx;
+		background-color: #f9f9f9;
+}
+.center-list-cell {
+		width: 750rpx;
+		background-color: #007AFF;
+		height: 40rpx;
+}
+.item-footer {
+		flex-direction: row;
+		align-items: center;
+}
+.item-footer-text {
+		color: #999;
+		font-size: 24rpx;
+		padding-right: 10rpx;
+}
+
+
+	

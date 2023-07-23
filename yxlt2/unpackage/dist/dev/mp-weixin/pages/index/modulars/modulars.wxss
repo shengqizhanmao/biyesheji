@@ -1,0 +1,14 @@
+
+.sort {
+		float: left;
+		margin-left: 20rpx;
+}
+.sort2 {
+		float: left;
+		margin-left: 20rpx;
+		border-bottom: 2px solid #dd0000;
+}
+.sort-text {
+		font-size: 20rpx;
+		/* text-decoration:underline */
+}

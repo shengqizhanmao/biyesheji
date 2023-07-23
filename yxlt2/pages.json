@@ -1,0 +1,267 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		//主页
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"onReachBottomDistance":50,
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+		    "path" : "pages/index/modulars/modulars",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "模块区",
+		        "enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": false
+				}
+		    }
+		},{
+		    "path" : "pages/index/article/article",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "帖子详情页",
+		        "enablePullDownRefresh": false
+		    }
+		},
+		//消息				
+		{
+			"path": "pages/news/news",
+			"style": {
+				"navigationBarTitleText": "消息",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/news/friends/friends",
+			"style": {
+				"navigationBarTitleText": "好友",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/news/chat/chat",
+			"style": {
+				"navigationBarTitleText": "好友聊天",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/news/friends/add/add",
+			"style": {
+				"navigationBarTitleText": "添加好友",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/news/friends/add/addDetailed",
+			"style": {
+				"navigationBarTitleText": "添加好友详情页",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/news/friends/detailed/detailed",
+			"style": {
+				"navigationBarTitleText": "好友详情页",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/news/chat/chatDetailed",
+			"style": {
+				"navigationBarTitleText": "好友聊天详情页",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		//创作中心		
+		{
+			"path": "pages/creation/creation",
+			"style": {
+				"navigationBarTitleText": "创作中心",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/creation/seeArticle/seeArticle",
+			"style": {
+				"navigationBarTitleText": "查看帖子",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+
+		}, {
+			"path": "pages/creation/creationArticle/creationArticle",
+			"style": {
+				"navigationBarTitleText": "创作帖子",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+
+		}, {
+			"path": "pages/creation/seeArticle/reviserArticle",
+			"style": {
+				"navigationBarTitleText": "修改文章`",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+		    "path" : "pages/creation/seeArticle/article",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "帖子详情页",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		//我的
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/my/Login/Login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/my/config/config",
+			"style": {
+				"navigationBarTitleText": "设置",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/my/user/user",
+			"style": {
+				"navigationBarTitleText": "个人信息",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/my/Login/EmailLogin",
+			"style": {
+				"navigationBarTitleText": "邮箱登录",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},{
+            "path" : "pages/my/Login/register",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "注册",
+                "enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": false
+				}
+            }
+        },{
+            "path" : "pages/my/collect/collect",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "帖子收藏",
+                "enablePullDownRefresh": false
+            }
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"enablePullDownRefresh": true
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"height": "50px",
+		"fontSize": "10px",
+		"iconWidth": "24px",
+		"spacing": "3px",
+		// 自定义的
+		"iconfontSrc": "static/uniicons.ttf", // app tabbar 字体.ttf文件路径 app 3.4.4+
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconfont": { // 优先级高于 iconPath，该属性依赖 tabbar 根节点的 iconfontSrc
+					"text": "\ue662",
+					"selectedText": "\ue662",
+					"fontSize": "25px",
+					"color": "#000000",
+					"selectedColor": "#0000ff"
+				}
+			},
+			{
+				"pagePath": "pages/creation/creation",
+				"text": "创作中心",
+				"iconfont": { // 优先级高于 iconPath，该属性依赖 tabbar 根节点的 iconfontSrc
+					"text": "\ue67b",
+					"selectedText": "\ue67b",
+					"fontSize": "25px",
+					"color": "#000000",
+					"selectedColor": "#5d00ff"
+				}
+			},
+			{
+				"pagePath": "pages/news/news",
+				"text": "消息",
+				"iconfont": { // 优先级高于 iconPath，该属性依赖 tabbar 根节点的 iconfontSrc
+					"text": "\ue697",
+					"selectedText": "\ue697",
+					"fontSize": "25px",
+					"color": "#000000",
+					"selectedColor": "#0000ff"
+				}
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconfont": { // 优先级高于 iconPath，该属性依赖 tabbar 根节点的 iconfontSrc
+					"text": "\ue699",
+					"selectedText": "\ue699",
+					"fontSize": "25px",
+					"color": "#000000",
+					"selectedColor": "#5d00ff"
+				}
+			}
+		]
+	}
+}

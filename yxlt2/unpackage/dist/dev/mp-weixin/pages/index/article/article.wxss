@@ -1,0 +1,107 @@
+
+.view {
+		width: 650rpx;
+		float: left;
+		margin-left: 40rpx;
+		margin-top: 40rpx;
+		background-color: #FFFFFF;
+}
+.avatar {
+		float: left;
+		width: 80rpx;
+		height: 80rpx;
+		/* margin-top: 40rpx; */
+		border-radius: 45rpx;
+}
+.nickname {
+		float: left;
+		margin-top: 20rpx;
+		margin-left: 20rpx;
+}
+.category {
+		float: right;
+}
+.title {
+		clear: both;
+		font-size: 40rpx;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+}
+.date {
+		font-size: 20rpx;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		color: #a6a6a6;
+}
+.content {
+		min-height: 600rpx;
+}
+.tags {
+		float: left;
+		margin-top: 30rpx;
+}
+.tags-item {
+		font-size: 10rpx;
+		margin-left: 12rpx;
+}
+.fengexian {
+		float: left;
+		margin-top: 30rpx;
+		clear: both;
+		width: 650rpx;
+		height: 10rpx;
+		border-top: 10rpx solid #cacaca;
+}
+.fengexian2 {
+		clear: both;
+		width: 650rpx;
+		height: 2rpx;
+		border-top: 2rpx solid #cacaca;
+		float: left;
+		margin-bottom: 100rpx;
+}
+.plk {
+		bottom: 0px;
+		position: fixed;
+		background-color: #f1f1ed;
+		width: 100%;
+		min-height: 100rpx;
+}
+.easyinput {
+		margin-left: 10rpx;
+		margin-top: 10rpx;
+		float: left;
+		width: 400rpx;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+}
+.easyinput-item {
+		height: 4rpx;
+}
+.fav {
+		float: left;
+}
+.floatLeft {
+		float: left;
+}
+.likesCount {
+		float: right;
+		margin-right: 30rpx;
+}
+.likesCount-item {
+		font-size: 20rpx;
+		color: #000;
+		text-align: center;
+}
+.collectionCounts {
+		float: right;
+		margin-right: 30rpx;
+}
+.collectionCounts-item {
+		font-size: 20rpx;
+		color: #000;
+		text-align: center;
+}

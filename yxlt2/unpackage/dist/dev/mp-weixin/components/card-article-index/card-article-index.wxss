@@ -1,0 +1,75 @@
+
+.image{
+		max-width: 300rpx;
+		max-height: 300rpx;
+}
+.articl-card {
+		float: left;
+		margin-top: 20rpx;
+		clear: both;
+		width: 650rpx;
+}
+.article-title-img {
+		float: left;
+		width: 80rpx;
+		height: 80rpx;
+		border-radius: 45rpx;
+		margin-top: 40rpx;
+		margin-left: 10rpx;
+}
+.article-title-nick {
+		margin-top: 40rpx;
+		margin-left: 10rpx;
+		float: left;
+		font-size: 20rpx;
+}
+.article-title-date {
+		float: left;
+		margin-top: 80rpx;
+		margin-left:0rpx;
+		font-size: 20rpx;
+		color: #a6a6a6;
+}
+.article-title-category {
+		float: right;
+		margin-top: 40rpx;
+		margin-left:-45rpx;
+		color: #1878cc
+}
+.article-title-category-button {
+		max-width: 200rpx;
+		font-size: 10rpx;
+}
+.article-tille-tags {
+		float: left;
+}
+.article-tille-tags-item{
+		font-size:10rpx;
+		margin-left: 12rpx;
+}
+.article-title-name {
+		clear: both;
+		float: left;
+		margin-top: 20rpx;
+		margin-left: 10rpx;
+		font-size: 30rpx;
+}
+.fengexian {
+		clear: both;
+		width: 400rpx;
+		height: 2rpx;
+		border-top: 1px solid #efefef;
+}
+.actions {
+		float: left;
+		margin-left: 60rpx;
+}
+.actions-text {
+		float: right;
+		margin-top: 10rpx;
+		margin-left: 0rpx;
+}
+.actions-clear {
+		clear: both;
+		height: 40rpx;
+}

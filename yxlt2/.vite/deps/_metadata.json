@@ -1,0 +1,23 @@
+{
+  "hash": "cd61d828",
+  "browserHash": "d7d7c938",
+  "optimized": {
+    "vue-cookies": {
+      "src": "../../node_modules/vue-cookies/vue-cookies.js",
+      "file": "vue-cookies.js",
+      "fileHash": "8eabcc0e",
+      "needsInterop": true
+    },
+    "axios": {
+      "src": "../../node_modules/axios/index.js",
+      "file": "axios.js",
+      "fileHash": "c396999c",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-RSJERJUL": {
+      "file": "chunk-RSJERJUL.js"
+    }
+  }
+}

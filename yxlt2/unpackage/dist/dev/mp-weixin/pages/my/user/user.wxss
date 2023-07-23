@@ -1,0 +1,5 @@
+
+.user-popup-email-code {
+		display: flex;
+		align-items: center;
+}

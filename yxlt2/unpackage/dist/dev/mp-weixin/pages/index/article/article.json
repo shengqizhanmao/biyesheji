@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "帖子详情页",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "mp-html": "../../../uni_modules/mp-html/components/mp-html/mp-html",
+    "uni-tag": "../../../uni_modules/uni-tag/components/uni-tag/uni-tag",
+    "uni-icons": "../../../uni_modules/uni-icons/components/uni-icons/uni-icons",
+    "comment-article": "../../../components/comment-article/comment-article",
+    "uni-easyinput": "../../../uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput",
+    "uni-fav": "../../../uni_modules/uni-fav/components/uni-fav/uni-fav",
+    "uni-popup-dialog": "../../../uni_modules/uni-popup/components/uni-popup-dialog/uni-popup-dialog",
+    "uni-popup": "../../../uni_modules/uni-popup/components/uni-popup/uni-popup"
+  }
+}

@@ -1,0 +1,53 @@
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.20.130:3306/sqzm_yxlt?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    hikari:
+      max-lifetime: 50000
+  redis:
+    host: 192.168.20.130
+    port: 6379
+    connect-timeout: 30000
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 200MB
+  aop:
+    proxy-target-class: true
+  mail:
+    protocol: smtps
+    host: smtp.163.com
+    port: 465
+    username: lin1149566912@163.com
+    password: MEBKVZRCWOMAOWOU
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          socketFactoryClass: javax.net.ssl.SSLSocketFactory
+    #        debug: true
+    from: lin1149566912@163.com
+minio:
+  url: http://192.168.20.130:9000 # 服务地址
+  access: admin # 账号
+  secret: adminminio # 密码
+  bucket: user # Bucket
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+# mybatis调试日志
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+server:
+  port: 8100
+  servlet:
+    context-path: /yxlt
+  tomcat:
+    uri-encoding: UTF-8
+logging:
+  file:
+    path: G:\\lin\\bysj\\sqzm\\log\\yxlt-log

@@ -1,0 +1,16 @@
+
+.app-height{
+		height: 100vh;
+}
+.app-background{
+		background: #f6f6f6;
+}
+.app-background-height{
+		min-height: 100vh;
+		background: #f6f6f6;
+}
+.app-list{
+		margin-top: 30rpx;
+}
+	/*每个页面公共css */
+page{--status-bar-height:25px;--top-window-height:0px;--window-top:0px;--window-bottom:0px;--window-left:0px;--window-right:0px;--window-magin:0px}[data-c-h="true"]{display: none !important;}

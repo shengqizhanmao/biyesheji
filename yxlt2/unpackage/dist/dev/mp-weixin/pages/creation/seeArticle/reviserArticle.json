@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "修改文章`",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-nav-bar": "../../../uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar",
+    "uni-easyinput": "../../../uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput",
+    "uni-forms-item": "../../../uni_modules/uni-forms/components/uni-forms-item/uni-forms-item",
+    "uni-file-picker": "../../../uni_modules/uni-file-picker/components/uni-file-picker/uni-file-picker",
+    "uni-section": "../../../uni_modules/uni-section/components/uni-section/uni-section",
+    "uni-data-select": "../../../uni_modules/uni-data-select/components/uni-data-select/uni-data-select",
+    "uni-grid-item": "../../../uni_modules/uni-grid/components/uni-grid-item/uni-grid-item",
+    "uni-grid": "../../../uni_modules/uni-grid/components/uni-grid/uni-grid",
+    "uni-tag": "../../../uni_modules/uni-tag/components/uni-tag/uni-tag"
+  }
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lin.common.mapper.ResourceMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.lin.common.pojo.Resource">
+        <id column="id" property="id"/>
+        <result column="parent_id" property="parentId"/>
+        <result column="resource_name" property="resourceName"/>
+        <result column="request_path" property="requestPath"/>
+        <result column="lavel" property="lavel"/>
+        <result column="is_leaf" property="isLeaf"/>
+        <result column="resource_type" property="resourceType"/>
+        <result column="sort_no" property="sortNo"/>
+        <result column="description" property="description"/>
+        <result column="is_system_root" property="isSystemRoot"/>
+        <result column="enable_flag" property="enableFlag"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id
+        , parent_id, resource_name, request_path, lavel, is_leaf, resource_type, sort_no, description,  is_system_root, enable_flag
+    </sql>
+    <select id="getListResourceBySUserId" resultMap="BaseResultMap">
+        SELECT c.id, request_path, lavel, c.enable_flag
+        from sh_resource c
+                 join
+             (select distinct b.resource_id
+              from sh_user_role a
+                       join sh_role_resource b
+                            on a.role_id = b.role_id
+              where a.user_id = #{id}
+                and b.enable_flag = '1') d
+             on c.id = d.resource_id
+    </select>
+    <select id="getListResourceByUserId" resultMap="BaseResultMap">
+        SELECT c.id, request_path, lavel, c.enable_flag
+        from sh_resource c
+                 join
+             (select distinct b.resource_id
+              from sh_user_role a
+                       join sh_role_resource b
+                            on a.role_id = b.role_id
+              where a.user_id = #{id}
+                and b.enable_flag = '1') d
+             on c.id = d.resource_id
+    </select>
+
+    <select id="getListResourceByRoleId" resultMap="BaseResultMap">
+        SELECT a.id, a.parent_id, a.resource_name, a.request_path, a.lavel,  a.is_leaf, a.resource_type, a.sort_no, a.description, a.is_system_root, a.enable_flag
+        from sh_resource a
+                 join sh_role_resource b
+                      on a.id = b.resource_id
+        where b.role_id = #{id}
+    </select>
+</mapper>

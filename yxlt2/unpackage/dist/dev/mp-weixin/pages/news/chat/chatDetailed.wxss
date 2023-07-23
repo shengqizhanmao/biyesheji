@@ -1,0 +1,15 @@
+
+.avatar {
+		width: 160rpx;
+		height: 160rpx;
+		margin-top: 10rpx;
+		margin-left: 10rpx;
+		border-radius: 10rpx;
+}
+.nickname{
+		margin-top:180rpx;
+		margin-left: -160rpx;
+}
+.list{
+		margin-top:30rpx;
+}

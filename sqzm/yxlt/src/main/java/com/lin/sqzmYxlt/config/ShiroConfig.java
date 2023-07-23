@@ -1,0 +1,118 @@
+package com.lin.sqzmYxlt.config;
+
+import com.lin.common.shiro.Jwt.JwtFilter;
+import com.lin.common.shiro.core.Realm.UserRealm;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.shiro.mgt.DefaultSessionStorageEvaluator;
+import org.apache.shiro.mgt.DefaultSubjectDAO;
+import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
+import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
+import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
+import org.jetbrains.annotations.NotNull;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+import javax.servlet.Filter;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+
+/**
+ * @Description 权限配置类
+ */
+@Configuration
+@ComponentScan(basePackages = {"com.lin.sqzmYxlt","com.lin.common"})
+@Slf4j
+public class ShiroConfig {
+
+    /*
+    * 安全过滤器
+    * ShiroFilterFactoryBean
+    * */
+    @Bean(value = "shiroFilterFactoryBean")
+    public ShiroFilterFactoryBean shiroFilterFactoryBean(
+            @Qualifier("defaultWebSecurityManager") DefaultWebSecurityManager defaultWebSecurityManager
+    ) {
+        ShiroFilterFactoryBean shiroFilterFactoryBean = new ShiroFilterFactoryBean();
+        //设置安全管理器
+        shiroFilterFactoryBean.setSecurityManager(defaultWebSecurityManager);
+        //设置我们自定义的JWT过滤器
+        Map<String, Filter> map = new HashMap<>();
+        map.put("jwt", new JwtFilter());
+        shiroFilterFactoryBean.setFilters(map);
+        //anon游客,authc登录,user,perms资源,role角色
+        Map<String, String> filterMap = new LinkedHashMap<>();
+        //静态资源
+        filterMap.put("/static/**", "anon");
+        filterMap.put("/webjars/**", "anon");
+        filterMap.put("/swagger-ui.html", "anon");
+        filterMap.put("/doc.html", "anon");
+        filterMap.put("/v2/**", "anon");
+        //不经过jwt拦截器就可以的
+        filterMap.put("/login/**", "anon");
+        //全部请求经过jwt拦截
+        filterMap.put("/**", "jwt");
+//        filterMap.put("/user/add","perms[user:add]");
+//        filterMap.put("/user/**","perms[user:*]");
+        shiroFilterFactoryBean.setFilterChainDefinitionMap(filterMap);
+        return shiroFilterFactoryBean;
+    }
+
+
+    /*
+    * 安全管理器
+    *
+    * */
+    @NotNull
+    @Bean(value = "defaultWebSecurityManager")
+    public DefaultWebSecurityManager getDefaultWebSecurityManager(
+            @Qualifier("userRealm") UserRealm userRealm,
+            @Qualifier("defaultSubjectDAO") DefaultSubjectDAO defaultSubjectDAO
+    ) {
+        DefaultWebSecurityManager defaultWebSecurityManager = new DefaultWebSecurityManager();
+        //关联Session,关闭session
+        defaultWebSecurityManager.setSubjectDAO(defaultSubjectDAO);
+        //关联Realm
+        defaultWebSecurityManager.setRealm(userRealm);
+        return defaultWebSecurityManager;
+    }
+
+    //Realm
+    @NotNull
+    @Bean(value = "userRealm")
+    public UserRealm getUserRealm() {
+        return new UserRealm();
+    }
+
+    //doa的默认
+    @NotNull
+    @Bean(value = "defaultSubjectDAO")
+    public DefaultSubjectDAO defaultSubjectDAO(@Qualifier("defaultSessionStorageEvaluator") DefaultSessionStorageEvaluator defaultSessionStorageEvaluator) {
+        DefaultSubjectDAO subjectDAO = new DefaultSubjectDAO();
+        subjectDAO.setSessionStorageEvaluator(defaultSessionStorageEvaluator);
+        return subjectDAO;
+    }
+
+    //关闭Session
+    @NotNull
+    @Bean(value = "defaultSessionStorageEvaluator")
+    public DefaultSessionStorageEvaluator defaultSessionStorageEvaluator() {
+        DefaultSessionStorageEvaluator defaultSessionStorageEvaluator = new DefaultSessionStorageEvaluator();
+        defaultSessionStorageEvaluator.setSessionStorageEnabled(false);
+        return defaultSessionStorageEvaluator;
+    }
+
+    //aop
+    @NotNull
+    @Bean
+    public AuthorizationAttributeSourceAdvisor authorizationAttributeSourceAdvisor(@Qualifier("defaultWebSecurityManager") DefaultWebSecurityManager defaultWebSecurityManager) {
+        AuthorizationAttributeSourceAdvisor authorizationAttributeSourceAdvisor
+                = new AuthorizationAttributeSourceAdvisor();
+        authorizationAttributeSourceAdvisor.setSecurityManager(defaultWebSecurityManager);
+        return authorizationAttributeSourceAdvisor;
+    }
+
+}

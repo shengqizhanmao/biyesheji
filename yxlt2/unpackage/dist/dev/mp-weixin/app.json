@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/news/news",
+    "pages/news/friends/friends",
+    "pages/news/chat/chat",
+    "pages/news/friends/add/add",
+    "pages/news/friends/add/addDetailed",
+    "pages/news/friends/detailed/detailed",
+    "pages/news/chat/chatDetailed",
+    "pages/creation/creation",
+    "pages/creation/seeArticle/seeArticle",
+    "pages/creation/creationArticle/creationArticle",
+    "pages/creation/seeArticle/reviserArticle",
+    "pages/my/my",
+    "pages/my/Login/Login",
+    "pages/my/config/config",
+    "pages/my/user/user",
+    "pages/my/Login/EmailLogin",
+    "pages/my/Login/register",
+    "pages/index/modulars/modulars",
+    "pages/index/article/article",
+    "pages/my/collect/collect"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "iconfontSrc": "static/uniicons.ttf",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/creation/creation",
+        "text": "创作中心"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {}
+}
