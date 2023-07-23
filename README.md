@@ -1,4 +1,4 @@
-# biyesheji
+# 毕业设计简单介绍
 ## 本文
 本文采用SpringBoot、Vue、Uni-App等前后端框架，
 采用了WebSocket全双工通信协议来编写好友通信，
